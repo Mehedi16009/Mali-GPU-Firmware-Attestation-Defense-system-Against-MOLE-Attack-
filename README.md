@@ -57,5 +57,5 @@ By requiring attested firmware, the entry point exploited by Mole is closed with
 👤 **Author**  
 Md. Mehedi Hasan  
 Prospective Ph.D. Student | Cybersecurity, LLMs, and GPU Security Research  
-Email: (mehedi.hasan.ict@mbstu.ac.bd)[mehedi.hasan.ict@mbstu.ac.bd]
-Portfolio: (Link)[https://md-mehedi-hasan-resume.vercel.app/]
+Email: [mehedi.hasan.ict@mbstu.ac.bd](mehedi.hasan.ict@mbstu.ac.bd)
+Portfolio: [Link](https://md-mehedi-hasan-resume.vercel.app/)
