@@ -46,7 +46,7 @@ Vendor (Offline)                Device (EL3 + EL1)
 | ------------------------ | --------------------------------- | --------------------------------------------------- |
 | **Test 1**               | Overwrite before EL3 verification | ❌ Signature verification failed — firmware rejected |
 | **Test 2**               | Overwrite after EL3 verification  | ❌ EL3 denied overwrite — firmware locked            |
-| **Verification Latency** | Time for EL3 signature check      | **~1.56 ms**                                        |
+| **Verification Latency** | Time for EL3 signature check      | **~1.34 ms**                                        |
 | **Secure Memory**        | Post-verification placement       | ✅ Placed plaintext into protected region            |
 
 FAARM successfully prevents both pre-verification injection and TOCTOU overwrite attacks, demonstrating the feasibility of this defense with negligible overhead.
