@@ -1,13 +1,14 @@
 # 🛡️ FAARM: Firmware Attestation and Authentication Framework for Mali GPUs
 Firmware Attestation Defense System Against MOLE Attacks
+--------------------------------------------------------
 A lightweight software prototype demonstrating how cryptographic attestation at the EL3 boundary can block malicious firmware on Mali GPU MCUs.
-----
+
 ## 📌 Overview
 FAARM is a prototype defense framework that protects Mali GPU Trusted Execution Environments (TEEs) from MOLE-style firmware injection attacks.
 MOLE exploits a critical gap during GPU initialization, where the untrusted EL1 kernel loads MCU firmware without any integrity verification. By injecting malicious firmware, an attacker can bypass memory protections, exfiltrate sensitive data (>40 MB/s), and tamper with inference outputs, all while remaining stealthy.
 FAARM closes this gap by adding cryptographic firmware signing and attestation at the EL3 secure monitor, ensuring that only vendor-authorized firmware is ever executed.
 This prototype is implemented entirely in Google Colab, using Python and C/OpenSSL to emulate the signing, verification, and secure loading process.
----
+
 ## 🎯 Goals
 🔐 Prevent pre-verification firmware injection by authenticating firmware before loading.
 ⏱ Block TOCTOU (time-of-check-to-time-of-use) tampering by locking firmware post-verification.
