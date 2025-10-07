@@ -50,7 +50,7 @@ Vendor (Offline)                Device (EL3 + EL1)
 | **Secure Memory**        | Post-verification placement       | ✅ Placed plaintext into protected region            |
 
 FAARM successfully prevents both pre-verification injection and TOCTOU overwrite attacks, demonstrating the feasibility of this defense with negligible overhead.
------
+
 ## 🚀 How to Run (in Google Colab)
 Open Firmware_Attestation_MaliGPU_Prototype.ipynb in Google Colab.
 Execute the notebook cells step by step:
@@ -62,27 +62,27 @@ Execute the notebook cells step by step:
 💥 Attack scenario (tamper + fail)
 Observe the attestation workflow and verification outcomes directly.
 💡 Works on any system (e.g., Mac M1) because it runs fully in the cloud.
------
+
 ## 📚 Research Context
 Inspired by MOLE (CCS 2025) — the first practical attack on GPU TEEs exploiting MCU firmware loading.
 FAARM proposes a defense mechanism compatible with current Mali GPU SoCs, adding a missing attestation layer between EL1 and EL3.
 The approach mirrors secure boot principles used in CPU TEEs, adapted to the GPU-MCU attack surface.
 
----
+
 ## 🧭 Future Work
 🔄 Integrating anti-rollback versioning and remote attestation.
 🧠 Extending FAARM to real Mali development boards (e.g., RK3588).
 📡 Exploring secure key storage via ARM TrustZone / OP-TEE.
 📑 Submitting results to a top-tier ACM/IEEE security journal.
----
+
 ## 🏷️ Keywords
 Mali GPU • Firmware Attestation • TEE Security • MOLE Attack • EL3 Verification • Firmware Signing • Google Colab Prototype • Hardware-Software Co-design
----
+
 ## 📝 Citation (coming soon)
 Md. Mehedi Hasan et al.,
 “FAARM: Firmware Attestation and Authentication Framework for Mali GPUs,”
 (Under Submission), 2025.
----
+
 👤 **Author**  
 Md. Mehedi Hasan  
 Prospective Ph.D. Student | Cybersecurity, LLMs, and GPU Security Research  
