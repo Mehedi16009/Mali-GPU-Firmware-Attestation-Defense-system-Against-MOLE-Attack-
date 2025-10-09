@@ -9,6 +9,9 @@ MOLE exploits a critical gap during GPU initialization, where the untrusted EL1 
 FAARM closes this gap by adding cryptographic firmware signing and attestation at the EL3 secure monitor, ensuring that only vendor-authorized firmware is ever executed.
 This prototype is implemented entirely in Google Colab, using Python and C/OpenSSL to emulate the signing, verification, and secure loading process.
 
+![5](https://github.com/user-attachments/assets/242110aa-251e-4aed-8c7e-05aa225df59f)
+
+
 ## 🎯 Goals
 🔐 Prevent pre-verification firmware injection by authenticating firmware before loading.
 ⏱ Block TOCTOU (time-of-check-to-time-of-use) tampering by locking firmware post-verification.
